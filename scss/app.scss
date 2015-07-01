@@ -1,0 +1,96 @@
+@import "settings";
+
+@import "foundation";
+
+// Or selectively include components
+ // @import "foundation/components/accordion";
+ // @import "foundation/components/alert-boxes";
+ // @import "foundation/components/block-grid";
+ // @import "foundation/components/breadcrumbs";
+ @import "foundation/components/button-groups";
+ @import "foundation/components/buttons";
+ // @import "foundation/components/clearing";
+ @import "foundation/components/dropdown";
+ @import "foundation/components/dropdown-buttons";
+ @import "foundation/components/flex-video";
+ @import "foundation/components/forms";
+ @import "foundation/components/grid";
+ @import "foundation/components/inline-lists";
+ // @import "foundation/components/joyride";
+ @import "foundation/components/keystrokes";
+ @import "foundation/components/labels";
+ // @import "foundation/components/magellan";
+ // @import "foundation/components/orbit";
+ @import "foundation/components/pagination";
+ @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+ // @import "foundation/components/progress-bars";
+ @import "foundation/components/reveal";
+ @import "foundation/components/side-nav";
+ @import "foundation/components/split-buttons";
+ @import "foundation/components/sub-nav";
+ @import "foundation/components/switches";
+ @import "foundation/components/tables";
+ @import "foundation/components/tabs";
+ @import "foundation/components/thumbs";
+ @import "foundation/components/tooltips";
+ // @import "foundation/components/top-bar";
+ @import "foundation/components/type";
+ // @import "foundation/components/offcanvas";
+ @import "foundation/components/visibility";
+
+
+
+ .flush-bottom { margin-bottom: 0; }
+img.rounded { border-radius: 9999px; }
+
+ .testimonial {
+ 	background:#4A90E2;
+ 	color:#FFFFFF;
+ 	h3 { color:#FFFFFF; }
+ }
+
+ $card-padding: rem-calc(10);
+ $section-padding: rem-calc(60);
+
+
+.header {
+	background:$secondary-color;
+	color: $white;
+	h1, a { color: $white; }
+	h1 { font-size: rem-calc(28); }
+	.inline-list {
+		margin-top: rem-calc(18);
+		line-height:1;
+		li {
+			border-right: solid 1px #FFF;
+			margin-left: 0;
+			padding-right: rem-calc(15);
+			padding-left: rem-calc(15);
+			&:last-child {
+				border-right: none;
+				padding-right: 0 !important;
+			}
+			&.active {font-weight: 400; }
+		}
+	}
+}
+
+.portfolio {
+	background:#EEECEE;
+	padding-top: $section-padding;
+	padding-bottom: $section-padding;
+	.card {
+		background:#FFFFFF;
+		box-shadow: 2px 2px 5px rgba(#000, 0.3);
+		margin-bottom: rem-calc(30);
+		h4, p {
+			padding-left: $card-padding;
+			padding-right: $card-padding;
+		}
+		h4 {
+			padding-top: $card-padding*2;
+		}
+	}
+}
+
